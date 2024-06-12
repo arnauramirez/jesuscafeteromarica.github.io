@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesus hazme un cafe</title>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: #353531;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
         .grid-container {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -19,6 +30,15 @@
         }
         .grid-container a.double {
             grid-column: span 2;
+        }
+        a{
+            border-radius: 5px;
+        }
+        a:hover {
+            -webkit-box-shadow: -1px 1px 42px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 1px 42px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: -1px 1px 42px 0px rgba(0, 0, 0, 0.75);
+            transition: 0.5s;
         }
         .yt{
             background-color: #ff0000;
