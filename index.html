@@ -18,7 +18,8 @@
         }
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             gap: 10px;
             width: 97%;
             margin: 0 auto;
@@ -31,8 +32,9 @@
             text-decoration: none;
             color: #000;
         }
-        .grid-container a.double {
-            grid-column: span 2;
+        .grid-container a.center {
+            grid-column: 1 / span 3;
+            grid-row: 2;
         }
         a{
             border-radius: 5px;
